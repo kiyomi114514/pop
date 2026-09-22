@@ -1,0 +1,8 @@
+services:
+  pop:
+    build: .
+    image: pop:latest
+    pull_policy: build
+    restart: unless-stopped
+    ports:
+      - "8080:80"
